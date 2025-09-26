@@ -1,11 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    
+    <script src="js/script.js"></script>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">🌐 Noir</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#message">Message Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="banner">
+    <div class="banner-text">
+      <h1 id="welcome">Hi, Welcome To Noir</h1>
+      <p>To Infinity and Beyond</p>
+    </div>
+  </section>
+
+  <!-- Headquarter -->
+  <section class="headquarter">
+    <h2>Our Headquarter</h2>
+    <div class="locations">
+  <div class="location">
+    <div class="circle">
+      <img src="../gambar/monas.jpg" alt="Jakarta" />
+    </div>
+    <p>Jakarta</p>
+  </div>
+  <div class="location">
+    <div class="circle">
+      <img src="../gambar/gs.jpeg" alt="Bandung" />
+    </div>
+    <p>Bandung</p>
+  </div>
+  <div class="location">
+    <div class="circle">
+      <img src="../gambar/sb.png" alt="Surabaya" />
+    </div>
+    <p>Surabaya</p>
+  </div>
+</div>
+
+  </section>
+
+  <!-- Profile -->
+  <section id="profile" class="profile-section">
+    <div class="profile-banner">
+      <h1>About Our Company</h1>
+    </div>
+    <div class="about">
+      <h2>About Us</h2>
+      <p>
+        Kami adalah perusahaan teknologi yang berfokus pada pengembangan solusi digital inovatif untuk mendukung kebutuhan masyarakat dan bisnis. 
+      </p>
+    </div>
+    <div class="vision-mission">
+      <div>
+        <h2>Our Vision</h2>
+        <p>
+          Menjadi perusahaan teknologi terdepan yang memberikan dampak positif bagi masyarakat global.
+        </p>
+      </div>
+      <div>
+        <h2>Our Mission</h2>
+        <ul>
+          <li>Menghadirkan solusi digital yang inovatif</li>
+          <li>Meningkatkan kualitas hidup melalui teknologi</li>
+          <li>Berkolaborasi dengan berbagai pihak untuk kemajuan bersama</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="portfolio">
+    <h2>Portfolio</h2>
+    <p>Ini adalah contoh project yang sudah kami kerjakan.</p>
+    <div class="portfolio-items">
+      <div class="portfolio-card">Project 1</div>
+      <div class="portfolio-card">Project 2</div>
+      <div class="portfolio-card">Project 3</div>
+    </div>
+  </section>
+
+  <!-- Message Us -->
+  <section id="message" class="message">
+    <h2>Message Us</h2>
+    <form id="messageForm">
+      <label>Nama:</label>
+      <input type="text" id="name" required />
+      
+      <label>Tanggal Lahir:</label>
+      <input type="date" id="dob" required />
+      
+      <label>Jenis Kelamin:</label>
+      <div class="gender">
+        <input type="radio" name="gender" value="Laki-laki" required /> Laki-laki
+        <input type="radio" name="gender" value="Perempuan" /> Perempuan
+      </div>
+      
+      <label>Pesan:</label>
+      <textarea id="messageText" required></textarea>
+      
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="result-box" id="resultBox">
+      <h3>Hasil Input:</h3>
+      <p><b>Current Time:</b> <span id="time"></span></p>
+      <p><b>Nama:</b> <span id="resName"></span></p>
+      <p><b>Tanggal Lahir:</b> <span id="resDob"></span></p>
+      <p><b>Jenis Kelamin:</b> <span id="resGender"></span></p>
+      <p><b>Pesan:</b> <span id="resMessage"></span></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Created by Akram</p>
+  </footer>
+
 </body>
 </html>
