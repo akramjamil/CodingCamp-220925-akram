@@ -1,5 +1,5 @@
 window.onload = function () {
-  
+   
   let userNamePrompt = prompt("Masukkan nama Anda:");
   if (userNamePrompt) {
     document.getElementById("welcome").innerText = `Hi ${userNamePrompt}, Welcome To Noir Studio!`;
